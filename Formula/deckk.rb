@@ -5,21 +5,21 @@
 class Deckk < Formula
   desc "Point a URL at it, get a PDF (pitch decks, docsend, etc.)"
   homepage "https://github.com/holman/deckk"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/holman/deckk/releases/download/v0.6.0/deckk_darwin_amd64.tar.gz"
-      sha256 "010664995bad334140c35558e2ff49d2eb6c7597945ce8673c194711b3f0a758"
+      url "https://github.com/holman/deckk/releases/download/v0.6.1/deckk_darwin_amd64.tar.gz"
+      sha256 "2c705e36a0f66573eff8e1127b24722d8975d8952d75e247d3a80837213c2325"
 
       define_method(:install) do
         bin.install "deckk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/holman/deckk/releases/download/v0.6.0/deckk_darwin_arm64.tar.gz"
-      sha256 "11363733e0637472865fc562d090758e37bc0ce87f5f0686185582b50e0d74fc"
+      url "https://github.com/holman/deckk/releases/download/v0.6.1/deckk_darwin_arm64.tar.gz"
+      sha256 "500d1b6b016cb42b57c5bae70b018b618456a2c31e160fefa58d12084548241d"
 
       define_method(:install) do
         bin.install "deckk"
@@ -29,15 +29,15 @@ class Deckk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/holman/deckk/releases/download/v0.6.0/deckk_linux_amd64.tar.gz"
-      sha256 "0749850f704027f814b2292401140e5da089e658e5d36a964f83f518941c74c5"
+      url "https://github.com/holman/deckk/releases/download/v0.6.1/deckk_linux_amd64.tar.gz"
+      sha256 "5f1575d7c7000821226c8992e574c3ef497a09efa48f764db33aeeed13c3566f"
       define_method(:install) do
         bin.install "deckk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/holman/deckk/releases/download/v0.6.0/deckk_linux_arm64.tar.gz"
-      sha256 "7aba37bf243354f3e2f410f40106579e46bb7ed75e4ecc7cf4dc23f920c76a9e"
+      url "https://github.com/holman/deckk/releases/download/v0.6.1/deckk_linux_arm64.tar.gz"
+      sha256 "9f8103447ae56904034dfc2f68cf4dad69905e7bad947e849628b056b2f22e0c"
       define_method(:install) do
         bin.install "deckk"
       end
